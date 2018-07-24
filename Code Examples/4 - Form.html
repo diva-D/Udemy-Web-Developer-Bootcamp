@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+
+<body>
+  <h1>Register</h1>
+  
+  <form>
+    
+    <!--    Name -->
+    <div>
+      <label for="firstName">First Name*:</label>
+      <input id="firstName" type="text" name="first_name" placeholder="John" required>
+      <label for="lastName">Last Name*:</label>
+      <input id="lastName" type="text" name="last_name" placeholder="Smith" required>
+    </div>
+    <!--    Sex-->
+    <div>
+      <label for="radio-male">Male</label>
+      <input id="radio-male" name="sex" type="radio" value="male" checked>
+      <label for="radio-female">Female</label>
+      <input id="radio-female" name="sex" value="female" type="radio">
+      <label for="radio-other">Other</label>
+      <input id="radio-other" name="sex" value="other" type="radio">
+    </div>
+    <!--    email-->
+    <div>
+      <label for="email">Email:</label>  
+      <input id="email" type="email" name="email" placeholder="your email" required>
+      <label for="password">Password:</label>
+      <input type="password" name="password" placeholder="your password" pattern=".{5,10}" required title="5 to 10 characters">
+    </div>
+    <!--    birthday-->
+     <div>
+      <label for="birthday">Birthday:</label>
+      <select id="birthday" name="month">
+        <option value="Month">Month</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+      </select>
+      <select name="day" id="day">
+        <option value="Day">Day</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+      </select>
+      <select name="year" id="year">
+        <option value="Year">Year</option>
+        <option value="2001">2001</option>
+        <option value="2002">2002</option>
+        <option value="2003">2003</option>
+        <option value="2004">2004</option>
+        <option value="2005">2005</option>
+        <option value="2006">2006</option>
+        <option value="2007">2007</option>
+        <option value="2008">2008</option>
+        <option value="2009">2009</option>
+        <option value="2010">2010</option>
+        <option value="2011">2011</option>
+        <option value="2012">2012</option>
+      </select>
+    </div>
+    <!--    terms-->
+    <div>
+      <label for="terms">I agree to the terms and conditions</label>
+      <input id="terms" name="terms" type="checkbox">
+    </div>
+    <!--    submit-->
+    <div>
+      <input type="submit">
+    </div>
+  </form>
+</body>
+</html>
+
+
+
+
+http://127.0.0.1:62120/Udemy%20-%20Web%20Developer%20Bootcamp/Examples/4%20-%20Form.html?first_name=David&last_name=Gentile&sex=male&email=davidgentile%40gmail.com&password=asdfgd&month=8&day=3&year=2001&terms=on
